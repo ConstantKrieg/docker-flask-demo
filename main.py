@@ -1,11 +1,12 @@
 from flask import Flask
 import time
+import os
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    n = 20
+    n = 30
     start_recursive = time.time()
     r_result = recursive_fibonacci(n)
     end_recursive = time.time()
@@ -58,4 +59,4 @@ def recursive_fibonacci(n):
         return recursive_fibonacci(n-1)+recursive_fibonacci(n-2)
 
 
-app.run(host='0.0.0.0')
+app.run(host='0.0.0.0', port=os.environ.get("PORT", 5000))
