@@ -1,0 +1,1 @@
+This project was done just to have a web application to deploy to Heroku using CircleCI as an exercise in course [DevOps with Docker](https://devopswithdocker.com/).
