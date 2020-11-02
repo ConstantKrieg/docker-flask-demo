@@ -6,6 +6,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    # compare two different approaches of calculating fibonacci numbers
+    
     n = 30
     start_recursive = time.time()
     r_result = recursive_fibonacci(n)
