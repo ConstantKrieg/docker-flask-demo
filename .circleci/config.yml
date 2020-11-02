@@ -8,4 +8,6 @@ workflows:
       - docker/publish:
           image: kriegmachine/fibonacci-flask
           tag: 'latest'
-      - heroku/deploy-via-git 
+      - heroku/deploy-via-git:
+          requires:
+            - docker/publish
