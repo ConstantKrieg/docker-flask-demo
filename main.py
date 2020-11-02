@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    n = 37
+    n = 20
     start_recursive = time.time()
     r_result = recursive_fibonacci(n)
     end_recursive = time.time()
